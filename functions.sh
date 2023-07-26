@@ -6,5 +6,5 @@ if [ $? -ne 0 ]; then
     exit $?
 fi
 
-echo -e "\e[32$1 \e[0m"
+echo -e "\e[32$1\e[0m"
 }
