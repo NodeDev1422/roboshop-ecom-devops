@@ -1,11 +1,11 @@
-echo -e "\e[31 m installationn started\e[om"
+echo -e "\e[33mInstallationn started\e[0m"
 
 yum install nginxxxx -y
 
-if($? == 0) then
-echo -e "\e[32 m Install success \e[om";
+if[$? -eq 0] then
+echo -e "\e[32mInstall success\e[0m";
 else 
-echo -e "\e[31 m installationn failed $? \e[om"
+echo -e "\e[31mInstallationn failed with error: $?\e[0m"
 fi
 
 
