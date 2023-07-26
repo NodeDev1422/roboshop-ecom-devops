@@ -1,14 +1,14 @@
-echo -e "\e[33mInstallation started\e[0m"
+echo -e "\e[33mFrontend Installation started \e[0m"
 
-yum install nginx -y
+yum install nginxx -y
 
 if [ $? -ne 0 ]; then
 
-    echo -e "\e[31mInstallationn failed with error: $?\e[0m"
-    exit $?
+echo -e "\e[31mInstallation Failed with error code: $? \e[0m"
+
 fi
 
-echo -e "\e[32mInstallationn success: $?\e[0m"
+echo -e "\e[32mInstallation sucess \e[0m"
 
 
 
