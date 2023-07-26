@@ -9,7 +9,7 @@ if [ $? -ne 0 ]; then
 fi
 
 rm -rf /tmp/frontend.zip
-remove -rf /usr/share/nginx/html/*
+rm -rf /usr/share/nginx/html/*
 
 curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip &> /tmp/frontendlogs
 
