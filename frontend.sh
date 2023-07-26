@@ -1,3 +1,14 @@
+function getErrMsg()
+{
+if [ $? -ne 0 ]; then
+
+    echo -e $1
+    exit $?
+fi
+
+echo -e "\e[32$1 \e[0m"
+}
+
 getErrMsg "Frontend Installation started"
 
 yum install nginx -y
@@ -33,13 +44,3 @@ getErrMsg "Nginx running"
 
 
 
-function getErrMsg()
-{
-if [ $? -ne 0 ]; then
-
-    echo -e $1
-    exit $?
-fi
-
-echo -e "\e[32$1 \e[0m"
-}
