@@ -11,11 +11,11 @@ fi
 
 remove -rf /usr/share/nginx/html/*
 
-curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
+curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip &> /tmp/frontendlogs
 
 cd /usr/share/nginx/html
 
-unzip /tmp/frontend.zip
+unzip /tmp/frontend.zip &> /tmp/frontendlogs
 
 
 echo -e "\e[32mInstallation sucess \e[0m"
