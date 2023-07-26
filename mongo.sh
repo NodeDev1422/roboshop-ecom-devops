@@ -3,7 +3,7 @@ cp mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo  -e "\e[33mMongo Installation process starts\e[0m"
 
-yum install mongo-org -y
+yum install mongodb-org -y
 
 if [ $? -ne 0 ]; then
 
