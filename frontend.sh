@@ -1,15 +1,4 @@
-function getErrMsg()
-{
-if [ $? -ne 0 ]; then
-
-    echo -e "\e[33m$1\e[0m"
-    exit $?
-fi
-
-echo -e "\e[32$1 \e[0m"
-}
-
-getErrMsg "Frontend Installation started"
+echo -e "\e[33mFrontend Installation started \e[0m"
 
 yum install nginx -y
 
@@ -19,28 +8,15 @@ if [ $? -ne 0 ]; then
     exit $?
 fi
 
-echo -e "\e[33mRemoving existing files in directory\e[0m"
-
-rm -rf /usr/share/nginx/html/*
-
-if [ $? -ne 0 ]; then
-
-echo -e "\e[31m Issue in removing files\e[0m"
-
-fi
-
-echo -e "\e[32mRemoved files in directory\e[0m"
-
 
 echo -e "\e[32mInstallation sucess \e[0m"
 
-getErrMsg "Nginx process steps starts"
-
+echo -e "\e[33mNginx process steps starts\e[0m"
 systemctl enable nginx
 systemctl restart nginx
+if [ $? -ne 0 ]; then
 
-
-getErrMsg "Nginx running"
-
-
-
+    echo -e "\e[31mNginx failed to run \e[0m"
+    exit $?
+fi
+echo -e "\e[32mNginx running\e[0m"
