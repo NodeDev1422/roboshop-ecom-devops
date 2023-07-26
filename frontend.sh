@@ -1,6 +1,6 @@
 echo -e "\e[33mFrontend Installation started \e[0m"
 
-yum install nginxx -y
+yum install nginx -y
 
 if [ $? -ne 0 ]; then
 
