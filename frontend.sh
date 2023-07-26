@@ -1,5 +1,7 @@
 echo -e "\e[33mFrontend Installation started \e[0m"
 
+cp frontend_nginx.conf /etc/nginx/default.d/robo.conf
+
 yum install nginx -y
 
 if [ $? -ne 0 ]; then
