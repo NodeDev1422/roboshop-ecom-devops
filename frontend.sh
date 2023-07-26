@@ -5,6 +5,7 @@ yum install nginxx -y
 if [ $? -ne 0 ]; then
 
 echo -e "\e[31mInstallation Failed with error code: $? \e[0m"
+exit $?
 
 fi
 
