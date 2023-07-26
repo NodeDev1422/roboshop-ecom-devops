@@ -2,7 +2,7 @@ function getErrMsg()
 {
 if [ $? -ne 0 ]; then
 
-    echo -e $1
+    echo -e "\e[33m$1\e[0m"
     exit $?
 fi
 
@@ -19,7 +19,7 @@ if [ $? -ne 0 ]; then
     exit $?
 fi
 
-echo -e "[33mRemoving existing files in directory\e[0m"
+echo -e "\e[33mRemoving existing files in directory\e[0m"
 
 rm -rf /usr/share/nginx/html/*
 
@@ -29,7 +29,7 @@ echo -e "\e[31m Issue in removing files\e[0m"
 
 fi
 
-echo -e "[32mRemoved files in directory\e[0m"
+echo -e "\e[32mRemoved files in directory\e[0m"
 
 
 echo -e "\e[32mInstallation sucess \e[0m"
