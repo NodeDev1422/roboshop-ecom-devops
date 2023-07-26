@@ -1,5 +1,5 @@
- source ./functions.sh
- getErrMsg "Frontend Installation started"
+ #source ./functions.sh
+ echo  "Frontend Installation started"
 
 # yum install nginx -y
 
