@@ -8,7 +8,7 @@ if [ $? -ne 0 ]; then
     exit $?
 fi
 
-
+rm -rf /tmp/frontend.zip
 remove -rf /usr/share/nginx/html/*
 
 curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip &> /tmp/frontendlogs
@@ -16,6 +16,7 @@ curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.z
 cd /usr/share/nginx/html
 
 unzip /tmp/frontend.zip &> /tmp/frontendlogs
+
 
 
 echo -e "\e[32mInstallation sucess \e[0m"
