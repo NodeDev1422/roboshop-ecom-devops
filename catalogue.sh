@@ -42,4 +42,4 @@ systemctl daemon-reload
 
 systemctl enable catalogue
 systemctl restart catalogue
-systemctl enable catalogue
+systemctl status catalogue
