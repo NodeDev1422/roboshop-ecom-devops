@@ -1,6 +1,8 @@
 component="catalogue"
 mongoIp="100.24.67.143"
 
+export mongoIp
+
 source functions.sh
 
 echo -e "\e[33mCatalogue Installtion started\e[0m"
