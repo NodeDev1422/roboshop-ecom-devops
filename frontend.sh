@@ -10,6 +10,8 @@ if [ $? -ne 0 ]; then
     exit $?
 fi
 
+cp frontend_nginx.conf /etc/nginx/default.d/robo.conf
+
 rm -rf /tmp/frontend.zip
 rm -rf /usr/share/nginx/html/*
 
