@@ -1,3 +1,5 @@
+source mongo.repo;
+
 function getErrMsg()
 {
 if [ $? -ne 0 ]; then
