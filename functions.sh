@@ -14,6 +14,6 @@ function installMongo()
 {
     cp mongo.repo /etc/yum.repos.d/mongo.repo
     yum install mongodb-org-shell -y
-    mongo --host {mongoIp} </app/schema/{component}.js
+    mongo --host ${mongoIp} </app/schema/${component}.js
 }
 
