@@ -1,5 +1,5 @@
-component = "catalogue"
-mongoIp = "127.0.0.1"
+component="catalogue"
+mongoIp="100.24.67.143"
 
 source functions.sh;
 

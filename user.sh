@@ -1,5 +1,5 @@
-component = "user"
-mongoIp = "127.0.0.1"
+component="user"
+mongoIp="127.0.0.1"
 source functions.sh
 
 echo -e "\e[33mUSer installation starts\e[0m"
