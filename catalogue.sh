@@ -33,10 +33,10 @@ else
 
 fi
 
+installMongo
+
 cd /app
 npm install
-
-installMongo
 
 systemctl daemon-reload
 
