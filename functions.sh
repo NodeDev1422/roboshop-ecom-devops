@@ -13,8 +13,8 @@ echo -e "\e[32$1\e[0m"
 
 function installMongo()
 {
-    cp mongo.repo /etc/yum.repos.d/mongo.repo &>> /tmp/functionlogs
-    yum install mongodb-org-shell -y
+    cp mongo.repo  /etc/yum.repos.d/mongo.repo &>> /tmp/functionlogs
+    yum install mongodb-org -y
     mongo --host ${mongoIp} </app/schema/${component}.js
 }
 
