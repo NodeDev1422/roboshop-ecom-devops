@@ -11,7 +11,7 @@ curl -sL curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 
 yum install nodejs -y
 
-if [ id "roboshop" ]; then
+if id "roboshop"; then
 
     echo -e "\e[31mUser exists\e[0m"
 else
@@ -21,7 +21,7 @@ fi
 
 mkdir /app
 
-if [ -e /tmp/catalogue.zip]; then
+if [ -e "/tmp/catalogue.zip"]; then
 
     echo -e "\e[31mFile exists\e[0m"
 
