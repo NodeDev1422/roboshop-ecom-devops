@@ -5,7 +5,7 @@ echo  -e "\e[33mMongo Installation process starts\e[0m"
 
 yum install mongodb-org -y
 
-sed -i 's/127.0.0.1/0.0.0.0' /etc/mongod.conf
+sed -i 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
 
 if [ $? -ne 0 ]; then
 
