@@ -19,14 +19,14 @@ else
 
 fi
 
-mkdir /app
 
-if [ -e "/tmp/catalogue.zip"]; then
+
+if [ -e "/tmp/catalogue.zip" ]; then
 
     echo -e "\e[31mFile exists\e[0m"
 
 else
-
+    mkdir /app
     curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip
     cd /app
     unzip /tmp/catalogue.zip
