@@ -11,7 +11,7 @@ echo -e "\e[32$1\e[0m"
 }
 
 
-function installMongo()
+installMongo()
 {
     cp mongo.repo /etc/yum.repos.d/mongo.repo
 
